@@ -1,0 +1,260 @@
+ul{
+    list-style: none;
+    display: flex;
+}
+body{
+    cursor: default;
+    width: 100vw;
+    background: #eeeeee;
+}
+body>header{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background: white;
+    box-shadow: 0.1px 1px 10px -1px black;
+}
+body>header>img{
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    width: 100px;
+}
+body>header>h1{
+    position: absolute;
+    margin: auto;
+    left: 10%;
+    top: 15px;
+    bottom: 0;
+    color: #f10030;
+}
+#today{
+    position: absolute;
+    left: 35%;
+    color: darkblue;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    border: none;
+}
+body>header>ul{
+    position: absolute;
+    margin: auto;
+    top: 35%;
+    bottom: 0;
+    right: 0;
+}
+body>header>ul>a>li>div{
+    width: 9em;
+    color: dimgrey;
+    cursor: pointer;
+}
+body>header>ul>a>li>div:hover{
+    color: #f10030;
+}
+body>header>ul>a>li>div>i{
+    font-size: 20px;
+    margin-right: 5px;
+    display: inline;
+}
+body>header>ul>a>li>div>p{
+    display: inline;
+}
+#CustomerSection{
+    position: absolute;
+    width: 99%;
+    height: 15%;
+    top: 12%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0.1px 1px 10px -1px black;
+}
+#inCus{
+    position: relative;
+    top: 35%;
+}
+#inCus h5{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#searchCus{
+    position: relative;
+    top: 33%;
+    width: 21%;
+}
+#inCus button{
+    position: relative;
+    margin-left: 46px;
+    top: 33%;
+    height: 30px;
+    width: 150px;
+    background: none;
+    color: #4b4b4b;
+    border: 2px solid #4b4b4b;
+    font-size: 15px;
+    cursor: pointer;
+}
+#inCus button:hover{
+    color: #f10030;
+    border: 2px solid #f10030;
+}
+#inCus h5{
+    position: relative;
+    margin-right: 1em;
+    display: inline;
+    top: 33%;
+}
+#input{
+    position: relative;
+    margin-left: 1em;
+    margin-right: 2em;
+    top: 33%;
+}
+#ItemSection{
+    position: absolute;
+    width: 99%;
+    height: 15%;
+    top: 29%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0.1px 1px 10px -1px black;
+}
+#inItem{
+    position: relative;
+    top: 35%;
+}
+#select{
+    position: relative;
+    margin-left: 1em;
+    top: 35%;
+}
+#inItem h5{
+    position: relative;
+    margin-left: 1em;
+    display: inline;
+    top: 35%;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#inItem button{
+    position: relative;
+    margin-left: 43px;
+    height: 30px;
+    width: 150px;
+    background: none;
+    color: #4b4b4b;
+    border: 2px solid #4b4b4b;
+    font-size: 15px;
+    cursor: pointer;
+}
+#inItem button:hover{
+    color: #f10030;
+    border: 2px solid #f10030;
+}
+#inItem>input{
+    width: 10%;
+}
+#TableSection{
+    position: absolute;
+    width: 99%;
+    height: 50%;
+    top: 46%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0.1px 1px 10px -1px black;
+}
+footer{
+    position: absolute;
+    width: 99%;
+    height: 25%;
+    top: 99%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0.1px 1px 10px -1px black;
+}
+footer div ul{
+    position: absolute;
+    list-style: none;
+    top: 70px;
+    left: 40.5%;
+}
+footer div ul li{
+    position: relative;
+    display: inline;
+    left: -20px;
+    padding: 20px;
+    font-size: 20px;
+    color: dimgrey;
+}
+footer div ul li a{
+    color: dimgrey;
+}
+footer div ul li a :hover{
+    color: #2879FF;
+}
+#thanx{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #4b4b4b;
+}
+#reserv{
+    font-family: Calibri;
+    font-size: 16px;
+    color: dimgrey;
+}
+#divTable{
+    position: relative;
+    width: 99%;
+    height: 98%;
+    top: 10px;
+}
+#table{
+    border: 2px solid #4b4b4b;
+    width: 98%;
+    height: 70%;
+}
+#table thead{
+    height: 20px;
+}
+#table tbody{
+    height: 50px;
+}
+#buttons{
+    position: absolute;
+    margin: auto;
+    right: 30px;
+    bottom: 30px;
+}
+.but{
+    margin-left: 40px;
+    width: 120px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: white;
+}
+.but:hover{
+    background: snow;
+    color: black;
+    border: 2px solid black;
+}
+#ord{
+    background: #2879FF;
+}
+#rem{
+    background: orange;
+}
+#can{
+    background: #f10030;
+}

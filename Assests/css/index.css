@@ -1,0 +1,751 @@
+body{
+    margin: 0;
+    background: url("../img/63336.jpg");
+}
+#opacity{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 110%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
+    filter: alpha(opacity = 50);
+}
+#photoBorder{
+    position: absolute;
+    margin: auto;
+    width: 157px;
+    height: 157px;
+    top: 135px;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: white;
+    animation: border 2s infinite;
+}
+@keyframes border {
+    0%{
+        background: black;
+    }
+    50%{
+        background: white;
+    }
+    100%{
+        background: black;
+    }
+}
+#myPhoto{
+    position: absolute;
+    margin: auto;
+    border-radius: 50%;
+    width: 150px ;
+    top: 140px;
+    right: 0;
+    left: 0;
+    border-color: white;
+}
+#myNameIs{
+    position: absolute;
+    margin: auto;
+    font-family: Candara;
+    color: white;
+    font-size: 30px;
+    top: 310px;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+#my{
+    position: absolute;
+    margin: auto;
+    font-family: Candara;
+    color: white;
+    font-size: 60px;
+    top: 360px;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+hr{
+    position: absolute;
+    width: 520px;
+    height: 1px;
+    background: white;
+    right: 0;
+    left: 0;
+    top: 430px;
+}
+#welcome{
+    position: absolute;
+    margin: auto;
+    font-family: Candara;
+    color: white;
+    font-size: 35px;
+    top: 450px;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+body>main>a>button{
+    cursor: pointer;
+    position: absolute;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    top: 550px;
+    text-align: center;
+    right: 0;
+    left: 0;
+    font-family: Candara;
+    font-size: 18px;
+    color: white;
+    background: none;
+    transition: 0.3s;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+}
+a>button>span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,#ffffff,#ffffff);
+    animation: animate1 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate1 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+a>button>span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom,#ffffff ,#ffffff);
+    animation: animate2 2s linear infinite;
+}
+@keyframes animate2 {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+a>button>span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left,#ffffff ,#ffffff);
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate3 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+a>button>span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, #ffffff , #ffffff);
+    animation: animate4 2s linear infinite;
+}
+@keyframes animate4 {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+button:hover{
+    background: snow;
+    color: black;
+    border: 3px solid black;
+    transition: all 1s;
+}
+@media all and (max-width: 375px) {
+    body{
+        margin : 0;
+        background: url("../img/63336.jpg");
+    }
+    #opacity{
+        position: absolute;
+        margin: auto;
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.3;
+        filter: alpha(opacity = 50);
+    }
+    #photoBorder{
+        position: absolute;
+        margin: auto;
+        width: 125px;
+        height: 125px;
+        top: 87px;
+        right: 0;
+        left: 0;
+        border-radius: 50%;
+        background-color: white;
+        animation: border 2s infinite;
+    }
+    @keyframes border {
+        0%{
+            background: black;
+        }
+        50%{
+            background: white;
+        }
+        100%{
+            background: black;
+        }
+    }
+    #myPhoto{
+        position: absolute;
+        margin: auto;
+        border-radius: 50%;
+        width: 120px ;
+        top: 90px;
+        right: 0;
+        left: 0;
+        border-color: white;
+    }
+    #myNameIs{
+        position: absolute;
+        margin: auto;
+        font-family: Candara;
+        color: white;
+        font-size: 25px;
+        top: 220px;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    #my{
+        position: absolute;
+        margin: auto;
+        font-family: Candara;
+        color: white;
+        font-size: 46px;
+        top: 280px;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    hr{
+        position: absolute;
+        width: 90%;
+        right: 0;
+        left: 0;
+        top: 395px;
+        height: 1px;
+        background: white;
+    }
+    #welcome{
+        position: absolute;
+        margin: auto;
+        font-family: Candara;
+        color: white;
+        font-size: 20px;
+        top: 415px;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    body>main>a>button{
+        cursor: pointer;
+        position: absolute;
+        margin: auto;
+        width: 180px;
+        height: 45px;
+        top: 495px;
+        text-align: center;
+        right: 0;
+        left: 0;
+        font-family: Candara;
+        font-size: 15px;
+        color: white;
+        background: none;
+        transition: 0.3s;
+        overflow: hidden;
+        border: none;
+        border-radius: 10px;
+    }
+    a>button>span:nth-child(1){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right,#ffffff,#ffffff);
+        animation: animate1 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate1 {
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+    }
+    a>button>span:nth-child(2){
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom,#ffffff ,#ffffff);
+        animation: animate2 2s linear infinite;
+    }
+    @keyframes animate2 {
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+    a>button>span:nth-child(3){
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left,#ffffff ,#ffffff);
+        animation: animate3 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate3 {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+    a>button>span:nth-child(4){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to top, #ffffff , #ffffff);
+        animation: animate4 2s linear infinite;
+    }
+    @keyframes animate4 {
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+    }
+    button:hover{
+        background: snow;
+        color: black;
+        border: 3px solid black;
+        transition: all 1s;
+    }
+}
+@media all and (min-width: 376px) and (max-width: 425px) {
+    body{
+        margin : 0;
+        background: url("../img/63336.jpg");
+    }
+    #opacity{
+        position: absolute;
+        margin: auto;
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.3;
+        filter: alpha(opacity = 50);
+    }
+    #photoBorder{
+        position: absolute;
+        margin: auto;
+        width: 125px;
+        height: 125px;
+        top: 87px;
+        right: 0;
+        left: 0;
+        border-radius: 50%;
+        background-color: white;
+        animation: border 2s infinite;
+    }
+    @keyframes border {
+        0%{
+            background: black;
+        }
+        50%{
+            background: white;
+        }
+        100%{
+            background: black;
+        }
+    }
+    #myPhoto{
+        position: absolute;
+        margin: auto;
+        border-radius: 50%;
+        width: 120px ;
+        top: 90px;
+        right: 0;
+        left: 0;
+        border-color: white;
+    }
+    #myNameIs{
+        position: absolute;
+        margin: auto;
+        font-family: Candara;
+        color: white;
+        font-size: 25px;
+        top: 225px;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    #my{
+        position: absolute;
+        margin: auto;
+        font-family: Candara;
+        color: white;
+        font-size: 52px;
+        top: 280px;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    hr{
+        position: absolute;
+        width: 90%;
+        right: 0;
+        left: 0;
+        top: 400px;
+        height: 1px;
+        background: white;
+    }
+    #welcome{
+        position: absolute;
+        margin: auto;
+        font-family: Candara;
+        color: white;
+        font-size: 25px;
+        top: 420px;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    body>main>a>button{
+        cursor: pointer;
+        position: absolute;
+        margin: auto;
+        width: 180px;
+        height: 45px;
+        top: 495px;
+        text-align: center;
+        right: 0;
+        left: 0;
+        font-family: Candara;
+        font-size: 15px;
+        color: white;
+        background: none;
+        transition: 0.3s;
+        overflow: hidden;
+        border: none;
+        border-radius: 10px;
+    }
+    a>button>span:nth-child(1){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right,#ffffff,#ffffff);
+        animation: animate1 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate1 {
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+    }
+    a>button>span:nth-child(2){
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom,#ffffff ,#ffffff);
+        animation: animate2 2s linear infinite;
+    }
+    @keyframes animate2 {
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+    a>button>span:nth-child(3){
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left,#ffffff ,#ffffff);
+        animation: animate3 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate3 {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+    a>button>span:nth-child(4){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to top, #ffffff , #ffffff);
+        animation: animate4 2s linear infinite;
+    }
+    @keyframes animate4 {
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+    }
+    button:hover{
+        background: snow;
+        color: black;
+        border: 3px solid black;
+        transition: all 1s;
+    }
+}
+@media all and (min-width: 426px) and (max-width: 768px){
+    body{
+        margin : 0;
+        background: url("../img/63336.jpg");
+    }
+    #opacity{
+        position: absolute;
+        margin: auto;
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.3;
+        filter: alpha(opacity = 50);
+    }
+    #photoBorder{
+        position: absolute;
+        margin: auto;
+        width: 139px;
+        height: 139px;
+        top: 97px;
+        right: 0;
+        left: 0;
+        border-radius: 50%;
+        background-color: white;
+        animation: border 2s infinite;
+    }
+    @keyframes border {
+        0%{
+            background: black;
+        }
+        50%{
+            background: white;
+        }
+        100%{
+            background: black;
+        }
+    }
+    #myPhoto{
+        position: absolute;
+        margin: auto;
+        border-radius: 50%;
+        width: 135px ;
+        top: 100px;
+        right: 0;
+        left: 0;
+        border-color: white;
+    }
+    #myNameIs{
+        position: absolute;
+        margin: auto;
+        font-family: Candara;
+        color: white;
+        font-size: 28px;
+        top: 250px;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    #my{
+        position: absolute;
+        margin: auto;
+        font-family: Candara;
+        color: white;
+        font-size: 52px;
+        top: 315px;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    hr{
+        position: absolute;
+        width: 410px;
+        right: 0;
+        left: 0;
+        top: 375px;
+        height: 1px;
+        background: white;
+    }
+    #welcome{
+        position: absolute;
+        margin: auto;
+        font-family: Candara;
+        color: white;
+        font-size: 27px;
+        top: 398px;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    body>main>a>button{
+        cursor: pointer;
+        position: absolute;
+        margin: auto;
+        width: 180px;
+        height: 45px;
+        top: 495px;
+        text-align: center;
+        right: 0;
+        left: 0;
+        font-family: Candara;
+        font-size: 15px;
+        color: white;
+        background: none;
+        transition: 0.3s;
+        overflow: hidden;
+        border: none;
+        border-radius: 10px;
+    }
+    a>button>span:nth-child(1){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right,#ffffff,#ffffff);
+        animation: animate1 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate1 {
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+    }
+    a>button>span:nth-child(2){
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom,#ffffff ,#ffffff);
+        animation: animate2 2s linear infinite;
+    }
+    @keyframes animate2 {
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+    a>button>span:nth-child(3){
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left,#ffffff ,#ffffff);
+        animation: animate3 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate3 {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+    a>button>span:nth-child(4){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to top, #ffffff , #ffffff);
+        animation: animate4 2s linear infinite;
+    }
+    @keyframes animate4 {
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+    }
+    button:hover{
+        background: snow;
+        color: black;
+        border: 3px solid black;
+        transition: all 1s;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>knightRider</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            position: absolute;
+            margin: auto;
+            width: 1000px;
+            height: 50px;
+            border: 2px solid white;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+        div div{
+            position: absolute;
+            margin: auto;
+            width: 100px;
+            height: 40px;
+            box-shadow: inset 8px 8px 33px 10px red;
+            top: 5px;
+            border: none;
+            border-radius: 50px;
+            animation: knightRider 1.2s infinite alternate-reverse;
+        }
+        @keyframes knightRider {
+            from{
+                margin: 0px 0px 0px 890px;
+            }
+            to{
+                margin: 0px 0px 0px 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+    </div>
+</body>
+</html>

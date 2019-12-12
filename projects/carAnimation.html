@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>carAnimation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: url("../Assests/img/carAnimationImg/sky.jpg");
+            overflow: hidden;
+        }
+        #img2{
+            height: 40%;
+            width: 400vw;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url("../Assests/img/carAnimationImg/road.jpg");
+            animation: city 5s infinite;
+        }
+        #img3{
+            width: 400vw;
+            height: 20vw;
+            position: absolute;
+            top: 167px;
+            left: 0;
+            background: url("../Assests/img/carAnimationImg/city.png");
+            animation: city 5s infinite;
+        }
+        #img4{
+            position: absolute;
+            top: 385px;
+            left: 460px;
+        }
+        #img5{
+            position: absolute;
+            top: 460px;
+            left: 489px;
+            animation: wheel 5s infinite;
+        }
+        #img6{
+            position: absolute;
+            top: 460px;
+            left: 690px;
+            animation: wheel 5s infinite;
+        }
+        @keyframes wheel {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(1200deg);
+            }
+        }
+        @keyframes city {
+            from{
+                margin: 0;
+            }
+            to{
+                margin-left: -2700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="img2"></div>
+        <div id="img3"></div>
+        <div id="img4"><img src="../Assests/img/carAnimationImg/car.png" alt="car" width="330px" height="150px"></div>
+        <div id="img5"><img src="../Assests/img/carAnimationImg/wheel.png" alt="wheel" width="60px" height="60px"></div>
+        <div id="img6"><img src="../Assests/img/carAnimationImg/wheel.png" alt="wheel" width="60px" height="60px"></div>
+    </div>
+</body>
+</html>
